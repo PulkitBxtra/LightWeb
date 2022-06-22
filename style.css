@@ -1,0 +1,589 @@
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------display-------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------navbar--------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 100;
+    top:0;
+    width:100%;
+    
+}
+
+
+#navbar ul li{
+    text-decoration:none;
+    list-style:none;
+    padding:3vw;
+    padding-top:3vh;
+}
+
+
+#navbar ul li h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:400;
+    font-size:20px;
+    color:white;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------temp----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+video {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height:auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.video-container {
+    height: 100vh;
+}
+
+.video-parallax {
+    -webkit-transition-position: fixed;
+    position: fixed;
+}
+
+.video-container h1{
+    color:white;
+    font-family: 'Noto Sans', sans-serif;;
+    font-weight:300;
+    text-align: center;
+    margin-top:40vh;
+    font-size:5rem;
+    overflow: hidden;
+    position:fixed;
+    margin-left:43vw;
+    z-index: -2;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------img2----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+#img2{
+
+    height:100vh;
+    background-image: url(Elements/RedwoodsNationalPark-GettyImages-589194231-1.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    z-index:-1;
+    position:relative;
+}
+
+
+#img2 h1{
+    color:white;
+    font-family: 'Noto Sans', sans-serif;;
+    font-weight:300;
+    font-size:2rem;
+    position: absolute;
+    /* padding: 2em; */
+    left: 50%;
+    top: 50%;
+    transform: translateY(150%, 150%);
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------img3----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+#img3{
+
+    height:100vh;
+    background-image: url(Elements/title3-2.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    z-index:2;
+    
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------content1----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+#content1{
+    background-color: rgb(22, 22, 19);
+    height:auto;
+    display:flex;
+    flex-direction: column;
+}
+
+/* ----------------------------left---------------- */
+
+#line1{
+    display:flex;
+    justify-content: space-around;
+    margin-left:10vw;
+    margin-right:10vw;
+
+}
+
+#Phone1 img{
+    height:60vh;
+    margin-right:10vw;
+    margin-top:10vh;
+}
+
+#cont1 p{
+    color:white;
+    font-family:'poppins', sans-serif;
+    font-weight:400;
+    font-size:1.3rem;
+    margin-top:14vh;
+}
+
+
+/* --------------------right----------------------- */
+
+#line2{
+    margin-top:20vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+   
+}
+
+#cont2 p{
+    color:white;
+    font-family:'poppins', sans-serif;
+    font-weight:400;
+    font-size:1.3rem;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-top:20vh;
+    
+}
+
+#Phone2 img{
+    height:60vh;
+    margin-right:10vw;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------back1----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+#back1{
+    height:100vh;
+    background-image: url(Elements/kindle2.webp);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------content2----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#content2{
+    background-color: rgba(198,197,193,255);
+    height:120vh;
+}
+
+#upper p{
+    color:black;
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+    font-weight:400;
+    font-size:2rem;
+    padding:5vh;
+    /* margin-top:5vh; */
+}
+
+#cont3{
+    margin-top:10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#cont3left{
+    margin-top:10vh;
+    margin-right:10vw;
+    margin-left:12vw;
+}
+
+#cont3right img{
+    height:80vh;
+    margin-right:15vw;
+}
+
+#head p{
+    color:black;
+    font-family: 'poppins',sans-serif;
+    font-weight:500; 
+    font-style:italic;
+    
+    font-size:3rem;
+}
+
+#subhead p{
+    font-family: 'poppins',sans-serif;
+    font-weight:400;
+   
+    font-size:1.1rem;
+    margin-top:5vh;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------back2----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+#back2{
+    height:100vh;
+    background-image: url(Elements/back1.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------content3----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+#content3{
+    background-color: black;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+}
+
+/* ----------------------------left---------------- */
+
+#line1{
+    display:flex;
+    justify-content: space-around;
+    margin-left:10vw;
+    margin-right:10vw;
+
+}
+
+#Phone12 img{
+    height:20vh;
+    margin-right:20vw;
+    margin-top:25vh;
+}
+
+#cont1 p{
+    color:white;
+    font-family:'poppins', sans-serif;
+    font-weight:400;
+    font-size:1.3rem;
+    margin-top:14vh;
+}
+
+
+/* --------------------right----------------------- */
+
+#line2{
+    margin-top:20vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+   
+}
+
+#cont2 p{
+    color:white;
+    font-family:'poppins', sans-serif;
+    font-weight:400;
+    font-size:1.3rem;
+    margin-left:10vw;
+    /* margin-right:10vw; */
+    margin-top:23vh;
+    
+}
+
+#Phone22 img{
+    height:50vh;
+    margin-right:10vw;
+    /* margin-left:4vw; */
+    margin-top:10vh;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------back4----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#back4{
+    height:100vh;
+    background-image: url(Elements/back5.webp);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------button div----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#contButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:15vw;
+    margin-right:15vw;
+    margin-top:20vh;
+    margin-bottom:10vh;
+
+}
+
+
+#top1 p{
+    color:white;
+    font-family:'poppins', sans-serif;
+    /* font-weight:300; */
+    font-style:italic;
+    font-size:2rem;
+    margin-left:4vw;
+    
+}
+
+#bottom1 p{
+    color:white;
+    font-family:'poppins', sans-serif;
+    text-align: center;
+    /* margin-top:5vh; */
+    font-weight:300;
+    font-size:1.2rem;
+    margin-top:2vh;
+}
+
+#button1{
+    margin-top:30vh;
+    margin-bottom:20vh;
+}
+
+#button1 p{
+    
+    color:white;
+    font-family: 'poppins',sans-serif;
+    font-weight:200;
+    padding: 10px;
+    padding-right:-20vw;
+    text-align: center;
+    border:solid;
+}
+
+#button1 p:hover{
+    background-color: white;
+    color:black;
+    transition: 0.3s;
+    
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------back4----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#back7{
+    height:100vh;
+    background-image: url(Elements/BlackForest-Germany-GettyImages-147180370-1.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+/* -----------------------------------------------------------------------------------------
+------------------------------------foot-------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
+#foot{
+    background-color: rgb(152, 152, 152);
+    height:100vh;
+}
+
+#navbar{
+    display:hidden;
+}
+
+#nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left:20vw;
+    margin-right:20vw;
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+
+#nav a p{
+    font-family:'noto sans',sans-serif;
+    font-weight:400;
+    font-size:1.2rem;
+    /* font-style:italic; */
+    color:white;
+    margin-top:10vh;
+    padding:2px;
+    
+
+
+}
+
+#nav a p:hover{
+    color:grey;
+
+}
+
+
+
+#mail{
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left:37vw;
+    margin-right:37vw;
+    margin-top:20vh;
+
+}
+
+
+#mail input{
+    border: none;
+    background-color: rgb(152, 152, 152);
+    border-bottom: 2px solid white;
+    height:2rem;
+    width:18vw;
+    color:white;
+    font-family: 'Courier Prime', monospace;
+    font-weight:400;
+    /* padding-top:1rem; */
+    /* margin-top:2vh; */
+}
+
+#mail input:focus{
+    border:none;
+    
+}
+
+
+
+#mailbutton p{
+    color:white;
+    /* font-family:'Courier Prime', monospace; */
+    font-family:'poppins',sans-serif;
+    font-weight: 400;
+    border:solid 1px;
+    padding:5px;
+}
+
+#mailbutton p:hover{
+    background-color: white;
+    color:rgb(152, 152, 152);
+    transition: 0.2s;
+}
+
+
+#t p{
+    color:white;
+    font-family: 'noto sans',sans-serif;
+    font-style:italic;
+    font-weight:300;
+    margin-top:5vh;
+    text-align: center;
+}
+
+::placeholder{
+    color:white;
+    font-size:1.3rem;
+}
+
+
+#socials{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-left:42vw;
+    margin-right:42vw;
+    margin-top:10vh;
+    color:white;
+}
+
+#socials i:hover{
+    color:rgb(190, 190, 190);
+}
+
+#logo img{
+    height:30vh;
+    margin-top:9vh;
+    margin-left:42vw;
+}
+
+#subtext{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin-top:-10vh;
+    margin-left:39vw;
+    margin-right:39vw;
+}
+
+#subtext p{
+    color:rgb(190, 190, 190);
+    /* font-family: 'noto sans',sans-serif; */
+    font-family:'Courier Prime', monospace;
+    font-weight: 400; 
+    margin-top:0.5vh;
+}
+
+#subtext h3{
+    color:white;
+    font-family: 'poppins',sans-serif;
+    font-weight:100;
+}
+
+
+
