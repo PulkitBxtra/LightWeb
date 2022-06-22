@@ -8,6 +8,10 @@
     padding:0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* ---------------------------------------------------------------------------------------- */
 /* -------------------------------------navbar--------------------------------------------- */
 /* ---------------------------------------------------------------------------------------- */
@@ -81,6 +85,40 @@ video {
     z-index: -2;
 }
 
+.video-container a i{
+    color:white;
+    margin-top:80vh;
+    /* display: flex;
+    justify-content: space-around; */
+    margin-left:48.5vw;
+    position: fixed;
+    z-index: 0;
+}
+
+.video-container a:hover i{
+    color:grey;
+}
+
+@keyframes pulse {
+    from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+} 
+
+.video-container a i {
+    animation : pulse 2s infinite;
+}
+
+
 
 /* ---------------------------------------------------------------------------------------- */
 /* -------------------------------------img2----------------------------------------------- */
@@ -95,7 +133,7 @@ video {
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
-    z-index:-1;
+    z-index:1;
     position:relative;
 }
 
