@@ -625,3 +625,7 @@ video {
 
 
 
+#img2,#img3,#content1,#back1,#content2,#back2,#content3,#line2,#back4,#contButton,#foot{
+    z-index: 2;
+    position: relative;
+}
